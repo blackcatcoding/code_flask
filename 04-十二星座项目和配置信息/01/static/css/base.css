@@ -1,0 +1,15 @@
+*{margin:0;padding:0;box-sizing: border-box;}
+.header{height:200px;width:1348px;background: url(/static/images/banner.png) repeat-x top center;margin:auto;position:relative;}
+.logo{width:600px;height:200px;background: url(/static/images/logo.png) no-repeat top center/cover;position:relative;top:00px;left:00px;}
+.header a{display:block;width:160px;height:200px;color: #FFF;font-size: 18px;margin-right: .4em;/*padding: 3em 0em 3em 1.4em;*/text-align: center;background: #bb1e10;line-height: 200px;text-decoration: none; }
+.star{position:absolute;left:600px;top:0px;}
+.sx{position: absolute;left:985px;top:0px;}
+.content{width:1200px;margin:auto;margin-top:60px;}
+.content:after{display:block;content: '';width:0;height:0;clear: both;padding-bottom:60px;}
+.content h3{color: #bb1e10;font-size: 40px;font-weight: 300;margin: 0;}
+.stars{width:100%;padding-left:20px;margin-top: 40px;}
+.star-item{float:left;margin-left:25px;margin-top: 40px;}
+.star-item img{width:255px;}
+.star-item h6{font-size: 1.1em;color: #000000;margin: 1em 0 1em 0;font-weight: 700;}
+.star-item p{color: #333333;font-size: 14px;margin: 0;line-height: 1.8em;font-weight: 400;}
+.footer{width:100%;height:100px;}

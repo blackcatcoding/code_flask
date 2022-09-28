@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="content">
+	<div class="title">
+		<span class="photo">
+			<!--在下方写你的代码：获取星座图片photo -->
+			<img src="{{ fortune['photo'] }}">
+		</span>
+		<span class="text">
+			<!--在下方写你的代码：星座名称name-->
+			<h4>{{ fortune['name'] }}</h4>
+			<!--星座对应的日期date-->
+			<small>{{ fortune['date'] }}</small>
+			<!--星座简介introduce-->
+			<p>{{ fortune['introduce'] }}</p>
+		</span>
+	</div>
+	<div class="fortune">
+		<p>
+			<h4 class="p1">综合运势</h4>
+            <span>{{fortune['overall']}}</span>
+		</p>
+		<p>
+			<h4 class="p2">事业学业</h4>
+            <span>{{fortune['career']}}</span>
+		</p>
+		<p>
+			<h4 class="p3">健康运势</h4>
+            <span>{{fortune['healthy']}}</span>
+		</p>
+
+	</div>
+</div>
+{% endblock%}

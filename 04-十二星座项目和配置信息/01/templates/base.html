@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>星座运势</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="/static/css/base.css">
+		<link rel="stylesheet" type="text/css" href="/static/css/fortune.css">
+		<link rel="stylesheet" type="text/css" href="/static/css/history.css">
+		{%block style%} {%endblock%}
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo"></div>
+			<a href="/star" class="star">12星座</a>
+			<a href="#" class="sx">12生肖</a>
+		</div>
+
+		{%block content%} {%endblock%}
+
+		<div class="footer"></div>
+
+		<script type="text/javascript" src='/static/js/history.js'></script>
+	</body>
+</html>

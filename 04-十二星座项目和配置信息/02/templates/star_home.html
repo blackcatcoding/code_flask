@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{%block content%}
+<div class="content">
+	<h3>■ 12星座 ■</h3>
+	<div class="stars">
+		<div class="star-item">
+			<a href="/star/fortune?star=aries"><img src="{{stars[0]['image']}}"></a>
+		</div>
+		<div class="star-item">
+			<a href="/star/fortune?star=taurus"><img src="{{stars[1]['image']}}"></a>
+		</div>
+		<div class="star-item">
+			<a href="/star/fortune?star=gemini"><img src="{{stars[2]['image']}}"></a>
+		</div>
+		<div class="star-item">
+			<a href="/star/fortune?star=cancer"><img src="{{stars[3]['image']}}"></a>
+		</div>
+		<div class="star-item">
+			<a href="/star/fortune?star=leo"><img src="{{stars[4]['image']}}"></a>
+		</div>
+		<div class="star-item">
+			<a href="/star/fortune?star=virgo"><img src="{{stars[5]['image']}}"></a>
+		</div>
+		<div class="star-item">
+			<a href="/star/fortune?star=libra"><img src="{{stars[6]['image']}}"></a>
+		</div>
+		<div class="star-item">
+			<a href="/star/fortune?star=scorpio"><img src="{{stars[7]['image']}}"></a>
+		</div>
+		<div class="star-item">
+			<a href="/star/fortune?star=sagittarius"><img src="{{stars[8]['image']}}"></a>
+		</div>
+		<div class="star-item">
+			<a href="/star/fortune?star=capricorn"><img src="{{stars[9]['image']}}"></a>
+		</div>
+		<div class="star-item">
+			<a href="/star/fortune?star=aquarius"><img src="{{stars[10]['image']}}"></a>
+		</div>
+		<div class="star-item">
+			<a href="/star/fortune?star=pisces"><img src="{{stars[11]['image']}}"></a>
+		</div>
+	</div>
+</div>
+{%endblock%}
