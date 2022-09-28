@@ -1,0 +1,6 @@
+*{margin:0;padding:0;}
+.header{width:1348px;height:51px;margin:auto;background: url(/static/images/header.png) no-repeat top center/cover;}
+.footer{width:1348px;height:608px;margin:auto;background: url(/static/images/footer.png) no-repeat top center/cover;}
+.acre{width:1348px;height:3875px;margin:auto;background: url(/static/images/acre.png) no-repeat top center/cover;}
+.grw{width:1348px;height:2516px;margin:auto;background: url(/static/images/grw.png) no-repeat top center/cover;}
+.startrek{width:1348px;height:2488px;margin:auto;background: url(/static/images/startrek.png) no-repeat top center/cover;}

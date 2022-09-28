@@ -1,0 +1,54 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1348px;
+    height: 1256px;
+    margin: auto;
+    background: url(/static/images/yk.png);
+    padding-top: 16px;
+}
+
+.search-form {
+    width: 33%;
+    height: 40px;
+    margin: auto;
+    position: relative;
+}
+
+.search-form input[type=text] {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    padding: 8px 12px 8px 18px;
+    outline: 0 none;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    background: hsla(0, 0%, 100%, .15);
+    border: 0;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.search-form input[type=submit] {
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    top: 0;
+    right: -1px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-family: "\5FAE\8F6F\96C5\9ED1";
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: #148aff;
+}

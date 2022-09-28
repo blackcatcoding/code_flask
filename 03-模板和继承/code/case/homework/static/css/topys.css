@@ -1,0 +1,21 @@
+*{margin: 0px; padding: 0px;}
+.header{
+  width:1280px;height:72px;margin:auto;background: url(/static/images/topys/header.png) no-repeat top center/cover;
+}
+.footer{
+  width:1280px;height:339px;margin:auto;background: url(/static/images/topys/footer.png) no-repeat top center/cover;
+}
+.explore{
+  width:1280px;height:3271px;margin:auto;background: url(/static/images/topys/explore.png) no-repeat top center/cover;
+}
+.active{
+  width:1280px;height:2497px;margin:auto;background: url(/static/images/topys/activity.png) no-repeat top center/cover;
+}
+.chat{
+  width:1280px;height:2225px;margin:auto;background: url(/static/images/topys/chat.png) no-repeat top center/cover;
+}
+a{
+  font-family: "黑体"; font-size: 18px; margin: 40px; color: black; 
+  font-weight: bold; text-decoration: none; position:relative; top:30px;
+}
+#explore{margin-left: 120px;}

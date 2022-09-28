@@ -1,0 +1,8 @@
+*{margin:0;padding:0;}
+.banner{height:146px;background:url(/static/images/index.jpg) no-repeat top center/cover;position:relative;}
+.container1{height:1800px;background:url(/static/images/index2.jpg) no-repeat center -146px/cover;position:relative;}
+.banner a{display:inline-block;width:100px;height:100px;}
+.blog{position:absolute;top:20px;left:1032px;}
+.quiz{position:absolute;top:20px;left:1157px;}
+.game{position:absolute;top:20px;left:1282px;}
+.container1 a{display:inline-block;width:200px;height:300px;position:absolute;top:260px;left:309px;}

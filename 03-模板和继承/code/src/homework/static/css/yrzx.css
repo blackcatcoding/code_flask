@@ -1,0 +1,31 @@
+.container {
+  width: 1348px;
+  height: 3928px;
+  background: url(/static/images/yrzx/yrzx.png) no-repeat top center/cover;
+  margin: auto;
+  position: relative;
+}
+.notice {
+  position: absolute;
+  height: 60px;
+  top: 1346px;
+  left: 620px;
+}
+.notice span {
+  width: 40px;
+  height: 40px;
+  background: url(/static/images/yrzx/icons.png) no-repeat;
+  background-position: -565px -576px;
+  margin-top: 10px;
+  float: left;
+}
+.notice a {
+  width: 500px;
+  height: 40px;
+  float: left;
+  margin-top: 10px;
+  line-height: 40px;
+  text-decoration: none;
+  color: black;
+  color:white;
+}

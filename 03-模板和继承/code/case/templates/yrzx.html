@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>一人之下</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="/static/css/yrzx.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="notice">
+				<span></span>
+				<a href="#"> 
+				<!--	下方写你的代码	-->
+				{% if info %}
+					{{ info }}
+				{% else %}
+					暂无
+				{% endif %}
+
+				</a>
+			</div>
+		</div>
+	</body>
+</html>

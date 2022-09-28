@@ -1,0 +1,205 @@
+.kid-info-main {
+    margin-top: -20px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.kid-info-blogcontent {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.kid-info-title {
+    height: 130px;
+    padding-top: 55px;
+    padding-left: 10px;
+    border-bottom: 1px solid #fdde2b;
+}
+
+.kid-info-head {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    float: left;
+    background: black no-repeat top center/100% 100%;
+}
+
+.kid-info-name {
+    width: 100px;
+    height: 30px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 2rem;
+    color: #fdde2b;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.kid-info-imgs {
+    height: 550px;
+    min-width: 1000px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.info-imgslist {
+    float: left;
+}
+
+.imgs-pre, .imgs-next {
+    width: 70px;
+    height: 150px;
+    margin-top: 170px;
+    opacity: 0.5;
+}
+
+.imgs-pre {
+    background: url(../images/pre.png) no-repeat center center;
+}
+
+.imgs-next {
+    background: url(../images/next.png) no-repeat center center;
+}
+
+.imgs-pre:hover, .imgs-next:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.imgs-list {
+    width: 860px;
+    height: 100%;
+}
+
+.imgs-list ul {
+    position: relative;
+}
+
+.imgs-list li {
+    position: absolute;
+    margin-top: 30px;
+    /*background-color: black;*/
+    overflow: hidden;
+}
+
+.imgs-list li div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.imgs-list img {
+    vertical-align: middle;
+}
+
+.kid-info-comment {
+    width: 700px;
+    margin: auto;
+    min-height:200px;
+}
+
+.kid-info-word {
+    color: #fdde2b;
+    font-size: 1.5rem;
+}
+
+.kid-info-opr {
+    padding-bottom: 2rem;
+}
+
+.kid-info-like, .kid-info-message {
+    float: left;
+    color: #fdde2b;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.kid-info-like img, .kid-info-message img {
+    width: 1.6rem;
+    margin-right: .5rem;
+    cursor: pointer;
+}
+
+.kid-info-like span {
+    margin-right: 2rem;
+}
+
+.kid-info-textarea {
+    width: 100%;
+    float: left;
+    margin-top: 1rem;
+    display: none;
+}
+
+.kid-info-textarea textarea {
+    resize: none;
+    width: 100%;
+    background-color: rgba(100, 100, 100, 0.7);
+    color: white;
+    height: 80px;
+    padding-bottom: 30px;
+}
+
+.kid-info-pubbtn {
+    width: 60px;
+    height: 30px;
+    border: 1px solid rgba(100, 100, 100, 0.9);
+    float: right;
+    background-color: rgba(100, 100, 100, 0.7);
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: -31px;
+    margin-right: 21px;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.kid-info-comlist {
+    padding-bottom: 2rem;
+}
+
+.kid-comlist-item {
+    color: #fdde2b;
+    font-size: 1rem;
+    min-height: 70px;
+}
+
+.com-photo, .com-username, .com-time, .com-content {
+    float: left;
+}
+
+.com-photo {
+    width: 40px;
+    height: 40px;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    background: url(../images/logo.png) no-repeat top center/100% 100%;
+}
+
+.com-username, .com-time {
+    height: 2rem;
+    margin-top: 1rem;
+    line-height: 2rem;
+}
+
+.com-username {
+    color: rgb(40, 70, 150);
+    margin-right: 1rem;
+}
+
+.com-time {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.com-content {
+    width: 600px;
+    color: white;
+}
+
+.kid-checklist{
+    float:right;
+    margin-right:5rem;
+}

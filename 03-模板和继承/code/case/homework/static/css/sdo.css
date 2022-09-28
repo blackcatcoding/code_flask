@@ -1,0 +1,5 @@
+*{margin:0;padding:0;}
+header{width:1366px;height:95px;margin:auto;background: url(/static/images/header.png) no-repeat top center/cover;}
+.container{width:1366px;height:951px;margin:auto;background: url(/static/images/sdo.png) no-repeat top center/cover;position:relative;}
+.download-info{width:200px;height:100px;position:absolute;top:700px;left:300px;box-sizing: border-box;padding-top: 5px;}
+.download-info p{color:#0faefd;height:30px;line-height: 30px;}

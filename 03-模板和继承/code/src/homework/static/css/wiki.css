@@ -1,0 +1,7 @@
+html,body{margin:0;padding:0;}
+.base{width:1348px;height:4518px;background: url(/static/images/wiki/wiki.png) no-repeat top center/cover;margin:auto;position:relative;}
+.current,.import{width:350px;height:140px;position:absolute;}
+.current{top:560px;left:160px;}
+.import{top:740px;left:160px;}
+ul{margin:0;list-style: none;}
+li{background: url(/static/images/wiki/point.png) no-repeat left 5px;padding-left:17px;margin-left:-25px;list-style:none;margin-bottom: 5px;box-sizing: border-box;margin-top: 10px;font-size: 14px;}
