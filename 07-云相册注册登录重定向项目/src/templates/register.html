@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>注册</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="/static/css/register.css">
+</head>
+<body>
+  <div class="lay_background">
+    <img src="/static/images/register_bg.jpg">
+  </div>
+  <div class="login_title">
+    <h1>云相册</h1>
+    <span class="pre">定格生活</span>
+    <span>留住感动</span>
+  </div>
+  <form onsubmit="return check()" class="login-box" action="/register" method='post'>
+    <input type="text" name="username" placeholder="请输入用户名" class="ele-username">
+    <span class="error-msg">
+      {% if msg %}
+        {{ msg }}
+      {% endif %}
+    </span>
+    <input type="password" name="password" placeholder="密码" class="ele-password">
+    <span class="error-msg-p"></span>
+    <input type="submit" value='注   册'>
+    <a href="/login">登录账号</a>
+  </form>
+  <script type="text/javascript" src="/static/js/jquery/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="/static/js/register.js"></script>
+  <script type="text/javascript">
+    window.onresize = function(){
+      var width = document.documentElement.clientWidth;
+      var height = document.documentElement.clientHeight;
+      $('.lay_background').css({'width':width+'px','height':height+'px'})
+    }
+  </script>
+</body>
+</html>

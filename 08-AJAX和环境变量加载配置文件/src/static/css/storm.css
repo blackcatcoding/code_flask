@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1348px;
+    height: 2321px;
+    background: url(/static/images/storm/storm.png) no-repeat top center/cover;
+    margin: auto;
+    position: relative;
+}
+
+.slice-up {
+    position: absolute;
+    height: 40px;
+    top: 1250px;
+    left: 140px;
+    color: #4f93b6;
+    font-size: 18px;
+}
+
+.slice-up span {
+    cursor: pointer;
+}
+
+.slice-up p {
+    color: #bdebf3;
+}

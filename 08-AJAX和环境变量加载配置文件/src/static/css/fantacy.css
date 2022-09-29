@@ -1,0 +1,4 @@
+*{margin:0;padding:0;}
+.container{width:1348px;height:1660px;background: url(/static/images/fantacy/fantacy.png) no-repeat top center/cover;margin:auto;position:relative;}
+.left-menu{width:227px;height:38px;position:absolute;top:879px;background: url(/static/images/fantacy/story.jpg) no-repeat top center/cover;left:11px;cursor:pointer;}
+.story{width:600px;height:674px;background: url(/static/images/fantacy/story_bg.png) no-repeat top center/cover;position:absolute;top:700px;left:290px;font-size:18px;font-weight: bold;line-height: 30px;}

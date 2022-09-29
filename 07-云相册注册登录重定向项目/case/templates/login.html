@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>登录</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="/static/css/login.css">
+</head>
+<body>
+  <div class="lay_background">
+    <img src="/static/images/login_bg.jpg">
+  </div>
+  <div class="login_title">
+    <h1>云相册</h1>
+    <span class="pre">定格生活</span>
+    <span>留住感动</span>
+  </div>
+  <form class="login-box" action="/login" method='post'>
+    <input type="text" name="username" placeholder="请输入用户名">
+      {% if user_msg %}
+          <span class="login-warning">{{user_msg}}</span>
+      {% endif %}
+    <input type="password" name="password" placeholder="密码">
+      {% if pass_msg %}
+            <span class="login-warning">{{pass_msg}}</span>
+      {% endif %}
+    <input type="submit" value='登   录'>
+    <a href="/register">注册账号</a>
+  </form>
+  <script type="text/javascript" src="/static/js/jquery/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript">
+    window.onresize = function(){
+      var width = document.documentElement.clientWidth;
+      var height = document.documentElement.clientHeight;
+      $('.lay_background').css({'width':width+'px','height':height+'px'})
+    }
+  </script>
+</body>
+</html>

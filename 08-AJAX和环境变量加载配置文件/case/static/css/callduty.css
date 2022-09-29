@@ -1,0 +1,6 @@
+*{padding: 0;margin:0;}
+.container{width:1348px;height:3779px;background: url(/static/images/callduty/callduty.png) no-repeat top center/cover;margin:auto;position:relative;}
+.map{width:150px;height:40px;position:absolute;top:1200px;left:175px;color:white;font-size: 20px;cursor: pointer;text-decoration: underline;}
+.map_inf{width:533px;height: 252px;background: url(/static/images/callduty/bg.jpg) no-repeat;position: absolute;top:1200px;left:175px;display:none;}
+.map_inf .title{color: #fff;font-size: 26px;line-height: 40px;padding: 22px 0 50px 21px;box-sizing: border-box;}
+.map_inf .content{color: #abbd9f;padding: 0 20px;box-sizing: border-box;}

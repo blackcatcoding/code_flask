@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>幻想大陆</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="/static/css/fantacy.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="left-menu"></div>
+			<div class="story">
+				<p class="content"></p>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="/static/js/jquery/jquery.min.js"></script>
+	<script type="text/javascript">
+		var content = document.getElementsByClassName('content')[0];
+		var menu = document.getElementsByClassName('left-menu')[0];
+		menu.onclick = function() {
+			// 请在下方写你的代码:发送ajax请求，获取响应内容并展示
+			$.get('/story', function(result){
+				content.innerHTML=result;
+			})
+		};
+	</script>
+</html>
