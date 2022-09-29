@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>那兔雪在烧</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/static/css/11/natu.css">
+</head>
+<body>
+<div class="container">
+    <div class="board">
+        <div class="gift">
+            <!--请在下方写你的代码：-->
+            {% for gift in gifts %}
+            <div class="gift-item" style="background: url(/static/images/11/natu/{{ gift['photo'] }});">
+                <span>{{ gift['name'] }}</span>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+{% endblock %}
+
+{% block header %}
+    <header class="am-topbar kid-topbar">
+        <img class="kid-logo" src="/static/images/logo.png">
+        <div class="kid-bar">
+            <ul class="kid-checklist">
+                <li class="kid-list kid-list-blog"></li>
+                <li class='kid-list kid-list-quiz'></li>
+                <li class="kid-list kid-list-game"></li>
+            </ul>
+            <div class="kid-search">
+                <input type="text" name="kw" class='kid-search-text'>
+                <input type="button" name="se" class="kid-search-btn" onclick="search()">
+            </div>
+        </div>
+    </header>
+{% endblock %}
+
+{% block main_content %}
+    <div class="kid-container" style="display:none;">
+        <div class="kid-main">
+            <div class="kid-title">
+                <div class="kid-userphoto" style="background-image: url(/static/images/1.jpg);"></div>
+                <div class="kid-username">xiaotong</div>
+                <a href="/moments/pub" class="kid-pub-btn"></a>
+                <div class="kid-head-list">
+                    <div class="kid-headlist">
+                        <!--请在下方写你的代码:通过模板for循环8次，展示8个头像-->
+                        <img src="/static/images/1.jpg" width="60" onclick="head_update(this)">
+                        <img src="/static/images/2.jpg" width="60" onclick="head_update(this)">
+                        <img src="/static/images/3.jpg" width="60" onclick="head_update(this)">
+                        <img src="/static/images/4.jpg" width="60" onclick="head_update(this)">
+                        <img src="/static/images/5.jpg" width="60" onclick="head_update(this)">
+                        <img src="/static/images/6.jpg" width="60" onclick="head_update(this)">
+                        <img src="/static/images/7.jpg" width="60" onclick="head_update(this)">
+                        <img src="/static/images/8.jpg" width="60" onclick="head_update(this)">
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+            <div class="kid-content">
+
+            </div>
+            <div class="kid-loading">
+                <label for="kid-more"><a href="javascript:page_next();">加载更多</a></label>
+                <br/>
+                <span id='kid-more' class="am-icon-arrow-down pull-label"></span>
+                <span class="am-icon-spinner am-icon-spin"></span><!-- 加载动画 -->
+            </div>
+        </div>
+    </div>
+    <div data-am-widget="gotop" class="am-gotop am-gotop-fixed">
+        <a href="#top" title="回到顶部"> <img class="am-gotop-icon-custom" src="/static/images/rocket-b.png"/> <span
+                class="am-gotop-title">回到顶部</span> </a>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script type="text/javascript" src="/static/js/index.js"></script>
+{% endblock %}

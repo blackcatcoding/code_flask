@@ -1,0 +1,6 @@
+html,body{margin:0;padding:0;}
+.base{width:1348px;height:2052px;background: url(/static/images/blr/blr.png) no-repeat top center/cover;margin:auto;position:relative;}
+.notice{width:480px;height:130px;position:absolute;top:695px;left:190px;}
+.notice img{float:left;margin-right: 10px;border:1px solid #000;display: inline;width: 165px;height: 110px;margin-top:10px;}
+.notice b{font-size: 16px;display: block;padding:5px 0;color: #3aa5ff;margin-top:20px;}
+.notice em{color:#fff;font-size: normal;margin:0;padding:0;font: 12px/1.8 tahoma, arial, \5b8b\4f53;}

@@ -1,0 +1,94 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: url(../images/login/bg.png) no-repeat top center/100% 100%;
+}
+
+body:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("../images/login/go_off.png") no-repeat -10000px -1000px,
+    url("../images/login/go_on.png") no-repeat -10000px -1000px;
+    width: 0;
+    height: 0
+}
+
+.regist-container {
+    width: 884px;
+    height: 600px;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    margin-top: -300px;
+    background: url(../images/login/register.png) no-repeat center center/cover;
+}
+
+.regist-username, .regist-password, .regist-repass {
+    width: 450px;
+    position: absolute;
+    left: 290px;
+}
+
+.regist-username {
+    top: 220px;
+}
+
+.regist-password {
+    top: 300px;
+}
+
+.regist-repass {
+    top: 380px;
+}
+
+.regist-container .regist-ele {
+    width: 260px;
+    height: 50px;
+    border-radius: 30px;
+    border: 6px double rgb(214, 214, 214);
+    background: rgb(239, 239, 239);
+    outline: none;
+    font-size: 1.5rem;
+    padding-left: 15px;
+}
+
+.regist-container span {
+    float: left;
+    width: 100px;
+    height: 50px;
+    font-size: 1.6rem;
+    text-align: right;
+    line-height: 50px;
+    padding-right: 5px;
+    color: rgb(145, 145, 145);
+}
+
+.regist-container .regist-btn {
+    width: 93px;
+    height: 80px;
+    position: absolute;
+    right: 35px;
+    top: 260px;
+    border:none;
+    outline:none;
+    background: url(../images/login/go_off.png) no-repeat top center/cover;
+}
+
+.regist-btn:hover {
+    cursor: pointer;
+    background: url(../images/login/go_on.png) no-repeat top center/cover;
+}
+.regist-container .error-msg{
+    width:220px;
+    height:20px;
+    margin-left:120px;
+    font-size:1rem;
+    color:red;
+    padding:0;
+    line-height:20px;
+    text-align: left;
+}

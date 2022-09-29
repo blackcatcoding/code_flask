@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>《部落冲突-皇室战争》</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/static/css/12/clash.css">
+</head>
+<body>
+<div class="container">
+    <div class="hot">
+        <!--在下方写你的代码：模板if判断日期是否存在-->
+        {% if hot['date'] %}
+            <p class="date">{{ hot['date'] }}</p>
+        {% else %}
+            <p class="date">时间待定</p>
+        {% endif %}
+        <h2 class="title">{{ hot['title'] }}</h2>
+        <!--过滤器展示内容大写-->
+        <p class="content">{{ hot['content'] | upper }}</p>
+    </div>
+</div>
+</body>
+</html>

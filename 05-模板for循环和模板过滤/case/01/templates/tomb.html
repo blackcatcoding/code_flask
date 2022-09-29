@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>古墓丽影</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/static/css/tomb.css">
+</head>
+<body>
+<div class="container">
+    <video src="/static/images/tomb/tr-free-loop.mp4" autoplay loop></video>
+    <div class="content">
+        <div class="weapons">
+            <!--请在下方写你的代码：使用模板for循环展示数据-->
+            {% for weapon in weapons %}
+            <div class="weapon">
+                <img src="/static/images/tomb/{{ weapon['img'] }}">
+                <p class="name">{{ weapon['name'] }}</p>
+                <p class="type">{{ weapon['type'] }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+</body>
+</html>

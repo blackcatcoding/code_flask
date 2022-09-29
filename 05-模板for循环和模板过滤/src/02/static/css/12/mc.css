@@ -1,0 +1,9 @@
+html,body{margin:0;padding:0;}
+.container{margin:auto;width:1348px;}
+.header{width:1348px;height:657px;background: url(/static/images/mc/mc_header.png) no-repeat top center/cover;}
+.content{width:1348px;height:4261px;background: url(/static/images/mc/mc_content.png) no-repeat top center/cover;position:relative;}
+.content div{width:260px;height:80px;position:absolute;top:20px;left:70px;}
+.content .live{left:490px;}
+.content .newgame{left:910px;}
+.content h3{margin: 0 0 14px 0;text-shadow: 0 3px 0 rgba(0, 0, 0, 0.25);font-size: 20px;line-height: 20px;letter-spacing: 1px;margin:0;padding:0;color:white;}
+.content p{margin: 0;line-height: 18px;letter-spacing: 1px;color: #fff;text-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);margin-top:15px;}

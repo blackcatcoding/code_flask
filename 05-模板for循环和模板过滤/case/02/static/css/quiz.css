@@ -1,0 +1,399 @@
+html, body {
+    height: 100%;
+}
+
+
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+body:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("../images/quiz/success.png") no-repeat -10000px -1000px,
+    url("../images/quiz/failure.png") no-repeat -10000px -1000px,
+    url("../images/quiz/true.png") no-repeat -10000px -1000px,
+    url("../images/quiz/false.png") no-repeat -10000px -1000px,
+    url("../images/quiz/bg.png") no-repeat -10000px -1000px,
+    url("../images/quiz/bg-inner.png") no-repeat -10000px -1000px,
+    url("../images/quiz/tab.png") no-repeat -10000px -1000px;
+    width: 0;
+    height: 0
+}
+
+.wrapper {
+    height: 100%;
+    background: url(../images/quiz/bg.png) no-repeat top center/100% 100%;
+    box-sizing: border-box;
+}
+
+.score {
+    position: absolute;
+    left: -2%;
+    top: -5%;
+    width: 15%;
+    height: 30%;
+    background: url(../images/quiz/score1.png) no-repeat 0% 0%/100% 100%;
+    display: table;
+}
+
+.score p {
+    font-size: 2vw;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px silver;
+    transform: skew(-15deg, 0deg);
+}
+
+.holder {
+    width: 100%;
+    height: 5%;
+}
+
+.frame {
+    width: 80%;
+    height: 90%;
+    background: url(../images/quiz/bg-inner.png) no-repeat top center/100% 100%;
+    margin: auto;
+    box-sizing: border-box;
+    padding-top: 10%;
+    padding-left: 2%;
+    display: none;
+}
+
+.question {
+    width: 70%;
+    height: 60%;
+    background: url(../images/quiz/tab.png) no-repeat top center/100% 100%;
+    color: white;
+    font-size: 3vh;
+    text-shadow: 0px 0px 10px white;
+    text-align: center;
+    padding-top: 2%;
+}
+
+.title {
+    display: table;
+    padding-right: 5%;
+    height: 15%;
+    width: 95%;
+}
+
+.content {
+    display: table;
+    vertical-align: middle;
+    text-align: center;
+    width: 75%;
+    margin-left: 10%;
+    margin-top: 3%;
+    height: 55%;
+}
+
+.content p, .title p {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.option {
+    width: 65%;
+    height: 20%;
+    margin-top: 3%;
+}
+
+.oframe {
+    width: 45%;
+    height: 80%;
+    float: left;
+    margin-left: 3%;
+    margin-top: 1%;
+    background: url(../images/quiz/option.png) no-repeat top center/100% 100%;
+}
+
+.oframe {
+    font-size: 3vh;
+    color: white;
+    display: table;
+}
+
+.oframe:hover {
+    cursor: pointer;
+}
+
+.oframe p {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.frame-checkpoints {
+    display: none;
+}
+
+.show {
+    animation: show .5s forwards;
+}
+
+.hide {
+    animation: hide .5s forwards;
+}
+
+@keyframes hide {
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(0, 0);
+    }
+}
+
+@keyframes show {
+    from {
+        transform: scale(0, 0);
+    }
+    to {
+        transform: scale(1, 1);
+    }
+}
+
+.frame-checkpoints {
+    background: url(../images/quiz/bg-inner2.png) no-repeat top center/100% 100%;
+}
+
+.checkpoint-frame {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    position: relative;
+}
+
+.checkpoint-frame .checkbtn {
+    height: 100%;
+    width: 10%;
+    position: absolute;
+}
+
+.checkpoint-frame .pre {
+    left: 0;
+    background: url(../images/quiz/pre.png) no-repeat center center/80%;
+}
+
+.checkpoint-frame .pre:hover {
+    background: url(../images/quiz/pre-on.png) no-repeat center center/80%;
+}
+
+.checkpoint-frame .next {
+    right: 0;
+    background: url(../images/quiz/next.png) no-repeat center center/80%;
+}
+
+.checkpoint-frame .next:hover {
+    background: url(../images/quiz/next-on.png) no-repeat center center/80%;
+}
+
+.checkpoint-frame .points {
+    position: absolute;
+    left: 9%;
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.checkpoint-frame .points ul {
+    width: 200%;
+    height: 90%;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+}
+
+.checkpoint-frame .points ul li {
+    width: 15%;
+    height: 80%;
+    min-width: 66px;
+    min-height: 87px;
+    margin-right: 1.5%;
+    background: url(../images/quiz/box-dull.png) no-repeat center center/cover;
+    float: left;
+}
+
+.checkpoint-frame .points ul li:hover {
+    cursor: pointer;
+}
+
+.answer {
+    width: 20%;
+    height: 35%;
+    position: absolute;
+    top: 31%;
+    left: 25%;
+    display: none;
+}
+
+.answer-correct {
+    display: block;
+    background: url(../images/quiz/true.png) no-repeat 0 0/100% 100%;
+    animation: show .5s;
+}
+
+.answer-incorrect {
+    display: block;
+    background: url(../images/quiz/false.png) no-repeat 0 0/100% 100%;
+    animation: show .5s;
+}
+
+@keyframes pass {
+    from {
+        transform: translate(1000px, 0);
+    }
+    to {
+        transform: translate(0px, 0)
+    }
+}
+
+.pass-through {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: -5%;
+    top: 20%;
+    display: none;
+}
+
+.pass-success {
+    display: block;
+    background: url(../images/quiz/success.png) no-repeat 0 0/100% 100%;
+    animation: pass .5s;
+}
+
+.pass-failure {
+    display: block;
+    background: url(../images/quiz/failure.png) no-repeat 0 0/100% 100%;
+    animation: pass .5s;
+}
+
+.mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: silver;
+    opacity: 0;
+    display: none;
+}
+
+@media (max-width: 720px) {
+    .checkpoint-frame .points ul li {
+        height: 100%;
+    }
+}
+
+@media (max-width: 360px) {
+    .checkpoint-frame .points ul {
+        width: 100%;
+    }
+
+    .checkpoint-frame .points ul li {
+        height: 50%;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+}    
+.frame-checkpoints,.frame-quiz{
+    position:relative;
+}
+.checkpoint-back{
+    width:9%;
+    height:10%;
+    position:absolute;
+    top:2%;
+    left:1%;
+    background:url(../images/quiz/back.png) no-repeat top center/cover;
+}
+.checkpoint-back:hover,.quiz-back:hover{
+    cursor: pointer;
+    background:url(../images/quiz/back-on.png) no-repeat top center/cover;
+}
+
+.quiz-back{
+    width:9%;
+    height:10%;
+    position:absolute;
+    top:9.5%;
+    left:1%;
+    background:url(../images/quiz/back.png) no-repeat top center/cover;
+}
+
+
+
+.gameover{
+    width:40%;
+    height:45%;
+    position:absolute;
+    left:27%;
+    z-index:199;
+    background:url(../images/quiz/success-frame.png) no-repeat top center/100% 100%;
+    display:none;
+}
+
+.quiz-score{
+    width:45%;
+    height:24%;
+    margin:auto;
+    margin-top:17%;
+}
+.score-coin{
+    display:inline-block;
+    width:33%;
+    height:100%;
+    background:url(../images/quiz/coin.png) no-repeat top center/cover;
+    margin-left:10%;
+}
+
+.score-x{
+    display:inline-block;
+    width:20%;
+    height:55%;
+    background:url(../images/quiz/x.png) no-repeat top center;
+}
+
+.score-number{
+    display:inline-block;
+    width:10%;
+    height:70%;
+    font-size:4rem;
+    color:yellow;
+    /*line-height:65px;*/
+    position:relative;
+    top:-30%;
+    left:5%;
+}
+
+
+.back-index{
+    width:29%;
+    height:15%;
+    background:url(../images/quiz/back-index.png) no-repeat top center/cover;
+    margin-left:10%;
+    margin-top:10%;
+}
+.quiz-replay{
+    width:29%;
+    height:15%;
+    margin-top:-10%;
+    margin-left:60%;
+    background:url(../images/quiz/replay.png) no-repeat top center/cover;
+}
+.back-index:hover,.quiz-replay:hover{
+    cursor:pointer;
+}
+
+

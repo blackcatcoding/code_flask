@@ -1,0 +1,49 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1348px;
+    height: 647px;
+    margin: auto;
+    background: url(/static/images/11/natu/bg.png) no-repeat top center/cover;
+    position: relative;
+}
+
+.board {
+    width: 838px;
+    height: 399px;
+    background: url(/static/images/11/natu/board.png) no-repeat top center/cover;
+    position: absolute;
+    left: 470px;
+    top: 40px;
+}
+
+.gift {
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.gift-item {
+    width: 161px;
+    height: 197px;
+    float: left;
+    margin-left: 28px;
+    position: relative;
+}
+
+.gift-item span {
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    left: 27px;
+    bottom: 16px;
+    color: #f6ee0c;
+    text-align: center;
+}

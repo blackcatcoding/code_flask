@@ -1,0 +1,45 @@
+html, body, * {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1348px;
+    height: 2167px;
+    background: url(/static/images/tymyd/01.png) no-repeat top center/cover;
+    margin: auto;
+    position: relative;
+}
+
+.data {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 810px;
+    left: 255px;
+}
+
+.type {
+    width: 50px;
+    height: 25px;
+    color: #000000;
+    opacity: 0.5;
+    font-family: Arial, Lantinghei SC, Hiragino Sans GB, SimHei, sans-serif;
+    margin: 0;
+    font-size: 13px;
+    margin-top: 9px;
+    float: left;
+    margin-right: 10px;
+}
+
+
+.title {
+    width: 300px;
+    height: 30px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #858585;
+    margin-top: 5px;
+    float: left;
+
+}

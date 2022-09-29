@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>天涯明月刀</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/static/css/12/tymyd.css">
+</head>
+<body>
+<div class="container">
+    <div class="data">
+        <!--在下方写你的代码：通过模板for循环遍历数据并展示-->
+        {% for d in data %}
+            <div class="type">
+                <!--展示类型-->
+                {{ d['type'] }}
+            </div>
+            <div class="title">
+                <!--展示标题，内容全大写-->
+                {{ d['title'] | upper }}
+            </div>
+        {% endfor %}
+    </div>
+</div>
+</body>
+</html>

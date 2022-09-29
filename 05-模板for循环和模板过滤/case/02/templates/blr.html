@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>不良人</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="/static/css/12/blr.css">
+	</head>
+	<body>
+		<div class="base">
+			<div class="notice">
+				<!--在下方写你的代码：通过过滤器展示数据-->
+				<img src="/static/images/blr/{{ notice['photo'] }}">
+				<span> 
+					<!--标题首字母大写-->
+					<b>{{ notice['title'] | capitalize }}</b> 
+					<!--内容单词全小写-->
+					<em>{{ notice['content'] | lower }}</em> 
+				</span>
+			</div>
+		</div>
+	</body>
+</html>

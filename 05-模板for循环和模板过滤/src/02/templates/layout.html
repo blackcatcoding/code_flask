@@ -1,0 +1,33 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>童程微博</title>
+    <!-- CSS file link -->
+    <link rel="icon" type="image/png" href="/static/images/title_icon.png">
+    <link rel="icon" sizes="192x192" href="/static/images/title_icon.png">
+    <link rel="apple-touch-icon-precomposed" href="/static/images/title_icon.png">
+    <link rel="stylesheet" type="text/css" href="/static/assets/css/amazeui.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/assets/css/app.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/loading.css">
+
+    <!-- custom -->
+    {% block stylesheet %}{% endblock %}
+</head>
+
+<body>
+
+{% block header %}{% endblock %}
+
+{% block main_content %}{% endblock %}
+
+
+<script src="/static/js/jquery/jquery.min.js"></script>
+<script src="/static/assets/js/amazeui.min.js"></script>
+<script src="/static/js/layout.js"></script>
+
+{% block script %}{% endblock %}
+
+</body>
+</html>

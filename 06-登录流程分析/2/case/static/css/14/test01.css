@@ -1,0 +1,7 @@
+html,body{margin:0;padding:0;width:100%;height:100%;background: url(/static/images/14/login_bg.jpg) no-repeat top center/cover;}
+body{padding-top: 100px;}
+.loginBox{width:500px;height:400px;padding:45px 55px 30px 55px;background: rgba(0,17,30,.7);outline: 8px solid rgba(255,255,255,.11);margin:auto;}
+.username,.password{height:47px;line-height: 47px;background-color:#ecedee;padding:8px 55px;box-sizing: border-box;float:left;margin-left:50px;width:400px;font-size: 16px;}
+.username{margin-top: 100px;}
+.password{margin-top: 30px;}
+.submit{float:left;height:47px;width:400px;margin-top: 30px;background:#df3343;margin-left:50px;border:none;outline:none;color:white;font-size:18px;cursor: pointer;border-radius: 5px;}

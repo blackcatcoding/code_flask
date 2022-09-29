@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.container {
+    width: 1348px;
+    height: 2876px;
+    background: url(/static/images/11/sj/sj.png) no-repeat top center/cover;
+    position: relative;
+    margin: auto;
+}
+
+.info {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 845px;
+    left: 340px;
+    width: 920px;
+}
+
+.info {
+    height: 114px;
+}
+
+.info li {
+    float: left;
+    margin-bottom: 10px;
+    background: #FFFFFF;
+}
+
+.info li img {
+    width: 170px;
+    height: 95px;
+    float: left;
+    margin: 10px;
+}
+
+.info li > div {
+    width: 720px;
+    height: 95px;
+    float: right;
+    color: #000000;
+    margin-top: 10px;
+    padding-right: 10px;
+}
+
+.info li > div p {
+    font-size: 14px;
+}

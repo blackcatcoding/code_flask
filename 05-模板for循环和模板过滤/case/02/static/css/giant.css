@@ -1,0 +1,32 @@
+html, body, * {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1348px;
+    height: 2344px;
+    background: url(/static/images/giant/giant.png) top center/cover;
+    margin: auto;
+    position: relative;
+}
+
+.introduce {
+    height: 100px;
+    border-left: 2px solid white;
+    position: absolute;
+    width: 80%;
+    top: 400px;
+    color: rgb(255, 255, 255);
+    text-shadow: rgba(0, 0, 0, 0.5) -1px -1px 3px, rgba(0, 0, 0, 0.5) 1px -1px 3px, rgba(0, 0, 0, 0.5) -1px 1px 3px, rgba(0, 0, 0, 0.5) 1px 1px 3px;
+    box-sizing: border-box;
+    padding-left: 40px;
+    margin-left: 40px;
+    padding-top: 10px;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 800;
+    text-shadow: rgba(0, 0, 0, 0.5) -1px -1px 3px, rgba(0, 0, 0, 0.5) 1px -1px 3px, rgba(0, 0, 0, 0.5) -1px 1px 3px, rgba(0, 0, 0, 0.5) 1px 1px 3px;
+}
