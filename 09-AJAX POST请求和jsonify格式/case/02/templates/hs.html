@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>炉石传说</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="/static/css/22/hs.css">
+</head>
+<body>
+  <div class="header">
+    <div class="recent">最新资讯</div>
+  </div>
+  <div class="content">
+    <div class="act ac01"></div>
+    <div class="act ac02"></div>
+    <div class="act ac03"></div>
+  </div>
+  <div class="footer"></div>
+</body>
+<script type="text/javascript" src="/static/js/jquery/jquery.min.js"></script>
+<script type="text/javascript">
+  var recent = document.getElementsByClassName('recent')[0];
+
+  recent.onclick = function(){
+    $.get('/recent',function(result){
+      showRecentInfo(result['recent']);
+    });
+  }
+
+  /**
+   * 展示最新资讯的方法
+   * @param {Array} data 需要展示的数据
+   */
+  function showRecentInfo(data){
+    var act = document.getElementsByClassName('act');
+    var content = document.getElementsByClassName('content')[0];
+    content.style.display = "block";
+    for(var i = 0;i < data.length; i++){
+      var template = 
+        '<img src="/static/images/22/hs/' + data[i]['image'] + '">'+
+        '<p>' + data[i]['title'] + '</p>';
+        act[i].innerHTML = template;
+    }
+  }
+
+
+
+</script>
+</html>

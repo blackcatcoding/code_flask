@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GIPHY</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="/static/css/21/giphy.css">
+</head>
+<body>
+  <div class="container">
+    <div class='popup_video'>
+      <video autoplay loop muted playsinline id="myVideo" style="z-index:-1" width="100%" -webkit-playsinline="true"
+             src="/static/images/21/giphy/giphy.mp4" type="video/mp4">
+      </video>
+      <div class="close"></div>
+    </div>
+
+    <div class="login-form">
+      <form action="/login" method="post">
+      <input type="text" name="username" placeholder="Email Address" class="email">
+      <input type="password" name="password" placeholder="Password" class="password">
+      <input type="submit" value="Login" class="sub">
+      </form>
+    </div>
+
+  </div>
+</body>
+<script type="text/javascript" src="/static/js/jquery/jquery.min.js"></script>
+
+<!--<script type="text/javascript">-->
+<!--  var button = document.getElementsByClassName('sub')[0];-->
+<!--  button.onclick = function(){-->
+<!--    var email = document.getElementsByClassName('email')[0].value;-->
+<!--    var password = document.getElementsByClassName('password')[0].value;-->
+<!--    giphyLogin(email,password);-->
+<!--  }-->
+
+<!--  // function giphyLogin(email,password){-->
+<!--  //   var data = {'email':email,'password':password};-->
+<!--  //   $.post('/login',data,function(result){-->
+<!--  //     $.cookie('giphy_login','yes');-->
+<!--  //     redirectToHome();-->
+<!--  //   });-->
+<!--  // }-->
+
+<!--  function redirectToHome(){-->
+<!--    window.location.href = '/giphy';-->
+<!--  }-->
+<!--</script>-->
+</html>

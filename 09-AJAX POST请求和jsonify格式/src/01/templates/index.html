@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <script>
+        //注册功能的ajax方法
+        function register_post() {
+            var username = document.getElementsByClassName('ele-username')[0];
+            var password = document.getElementsByClassName('ele-password')[0];
+            var telephone = document.getElementsByClassName('ele-telephone')[0];
+            var data = {
+                'username': username.value,
+                'password': password.value,
+                'telephone': telephone.value
+            };
+            //在下方写你的代码：发送post请求/user/register，传递数据data，并使用alert方法展示响应结果
+
+
+        }
+
+    </script>
+
+</head>
+<body>
+
+<div class="form" style="position:relative">
+
+    <!--注册表单-->
+    <div class="form_register" style="position:absolute;height:500px;">
+        <form action="#">
+            <h1>注册表单</h1>
+            <div class="form_item">
+                <label for="username">用户名：</label>
+                <input type="text" name="username" class="ele-username" placeholder="请输入用户名" required>
+            </div>
+            <div class="form_item">
+                <label for="password">密码：</label>
+                <input type="password" name="password" class="ele-password" placeholder="请输入密码" required>
+            </div>
+            <div class="form_item">
+                <label>手机：</label>
+                <input type="tel" name="tel" class="ele-telephone" placeholder="请输入手机号码" required>
+            </div>
+            <div class="form_item">
+                <input type="button" value="注册" onclick="register_post();">
+            </div>
+        </form>
+        <div class="info">已有账号？点击<span class="switch login_Btn">登录</span></div>
+    </div>
+
+    <!--登录表单-->
+    <div class="form_login" style="height:0;">
+
+        <form action="#">
+            <h1>登录表单</h1>
+            <div class="form_item">
+                <label for="username">用户名：</label>
+                <input type="text" name="username" id="username" placeholder="请输入用户名" required>
+            </div>
+            <div class="form_item">
+                <label for="password">密码：</label>
+                <input type="password" name="password" id="password" placeholder="请输入密码" required>
+            </div>
+            <div class="form_item">
+                <input type="submit" value="登录">
+            </div>
+        </form>
+        <div class="info">没有账号？点击<span class="switch register_Btn">注册账号</span></div>
+
+    </div>
+
+</div>
+</body>
+
+<script src="/static/js/form.js"></script>
+<script type="text/javascript" src="/static/js/jquery/jquery-1.8.3.min.js"></script>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>明日之后</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="/static/css/22/mrzh.css">
+</head>
+<body>
+  <div class="header">
+    <div class="more">更多玩法</div>
+  </div>
+  <div class="content">
+    <div class="c_item"></div>
+    <div class="c_item"></div>
+    <div class="c_item"></div>
+  </div>
+  <div class="footer"></div>
+</body>
+<script type="text/javascript" src="/static/js/jquery/jquery.min.js"></script>
+<script type="text/javascript">
+  
+  var more = document.getElementsByClassName('more')[0];
+  var content = document.getElementsByClassName('content')[0];
+  var items = document.getElementsByClassName('c_item');
+  
+  // 下方写出ajax get 请求
+  more.onclick = function(){
+      $.get('/more', function(result){
+          showMorePlay(result['info']);
+      });
+  }
+
+  /**
+   * 展示更多玩法内容的方法
+   * @param {Array} data 需要展示的数据
+   */
+  function showMorePlay(data){
+    content.style.display = "block";
+    for(var i = 0 ; i < data.length ; i++){
+      var template = 
+        '<img src="/static/images/22/mrzh/' + data[i]['image'] + '">'+
+        '<div class="text">'+
+          '<h3>' + data[i]['title'] + '</h3>'+
+          '<span></span>'+
+          '<p>' + data[i]['content'] + '</p>'+
+        '</div>';
+      items[i].innerHTML = template;
+    }
+  }
+  
+</script>
+</html>

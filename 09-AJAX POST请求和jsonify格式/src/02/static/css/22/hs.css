@@ -1,0 +1,10 @@
+*{margin:0;padding:0;box-sizing: border-box;}
+.header{width:1348px;height:721px;background: url(/static/images/22/hs/header.png) no-repeat top center/cover;position: relative;margin:auto;}
+.content{width:1348px;height:377px;background: url(/static/images/22/hs/content.png) no-repeat top center/cover;position: relative;padding-top:20px;padding-left: 150px;display: none;margin:auto;}
+.footer{width:1348px;height:472px;background: url(/static/images/22/hs/footer.png) no-repeat top center/cover;margin:auto;}
+.recent{position: absolute;left:50%;bottom:118px;width:125px;height:40px;margin-left:-62px;color:white;font-size: 18px;letter-spacing: 5px;line-height: 40px;text-align: center;}
+.recent:hover{opacity: .7;cursor: pointer;}
+.content .act{width:320px;height:300px;float:left;margin-left:20px;text-align: center;}
+.act img{width:310px;height:220px;}
+.act p{width:320px;height:80px;background: url(/static/images/22/hs/board.png) no-repeat -10px -15px;position:relative;z-index: 2;top:-5px;color: #fff;font-size: 20px;font-weight: 700;text-shadow: 0 0 5px #371f00, 0 0 5px #371f00, 0 0 5px #371f00, 0 0 5px #371f00;line-height: 65px;}
+.act p:hover{color: #987a5d;cursor: pointer;}

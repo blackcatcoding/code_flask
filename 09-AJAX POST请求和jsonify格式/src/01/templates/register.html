@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" type="text/css" href="/static/css/register.css">
+{% endblock %}
+
+{% block script %}
+    <script type="text/javascript" src="/static/js/register.js"></script>
+    <script type="text/javascript" src="/static/js/ajax/register_ajax.js"></script>
+{% endblock %}
+
+{% block main_content %}
+    <div class="regist-container">
+        <form action="#">
+            <div class="regist-username">
+                <span class="regist-user">用户名</span>
+                <input id="register-name" class="regist-ele ele-username" type="text" name="username" autocomplete="off" >
+                <span class="error-msg">
+                    {% if msg %}
+                        {{msg}}
+                    {% endif %}
+                </span>
+            </div>
+            <div class="regist-password">
+                <span class="regist-pass">密码</span>
+                <input id="register-password" class="regist-ele ele-password" type="password" name="password">
+                <span class="error-msg"></span>
+            </div>
+            <div class="regist-repass">
+                <span class="regist-repa">确认密码</span>
+                <input class="regist-ele ele-repass" type="password">
+                <span class="error-msg"></span>
+            </div>
+            <input class="regist-btn" type="button" value="">
+        </form>
+    </div>
+{% endblock %}
+

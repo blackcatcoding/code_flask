@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" type="text/css" href="/static/css/login.css">
+{% endblock %}
+
+{% block main_content %}
+    <div class="login-container">
+        <form action="/user/login/" method="post">
+            <div class="login-username">
+                <span class="username-icon"></span>
+                <span class="login-line"></span>
+                <input type="text" name="username" value="{{username}}">
+                {% if user_msg %}
+                <span class="login-warning">{{user_msg}}</span>
+                {% endif %}
+            </div>
+            <div class="login-password">
+                <span class="password-icon"></span>
+                <span class="login-line"></span>
+                <input type="password" name="password">
+                {% if pass_msg %}
+                <span class="login-warning">{{pass_msg}}</span>
+                {% endif %}
+            </div>
+            <div class="login-to-regist">
+                <a href="#">注册账号</a>
+            </div>
+            <input class="login-btn" type="submit" value="">
+        </form>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script type="text/javascript" src="/static/js/login.js"></script>
+{% endblock %}

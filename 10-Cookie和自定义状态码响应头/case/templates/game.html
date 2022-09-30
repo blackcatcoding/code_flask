@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" type="text/css" href="/static/css/game.css">
+{% endblock %}
+
+{% block main_content %}
+    <div class="game-back"></div>
+    <div class="game-container" style="display:none;">
+        <header class="game-header">
+            <div class="game-title"></div>
+            <div class="game-coins">
+                <span class="game-coin-icon"></span>
+                <span class="game-money">888</span>
+            </div>
+            <div class="game-store">
+                <a class="game-store-enter" href="/game/store">进入商城</a>
+            </div>
+        </header>
+        <div class="game-frame">
+            <div class="game-content">
+                <div class="game-list">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script type="text/javascript" src="/static/js/game.js"></script>
+{% endblock %}

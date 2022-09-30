@@ -1,0 +1,12 @@
+*{margin:0;padding:0;box-sizing: border-box;}
+.header{width:1348px;height:1172px;background: url(/static/images/22/mrzh/header.png) no-repeat top center/cover;margin:auto;position:relative;}
+.content{width:1348px;height:441px;background: url(/static/images/22/mrzh/content.png) no-repeat top center/cover;margin:auto;display: none;padding-left: 30px;}
+.footer{width:1348px;height:1011px;background: url(/static/images/22/mrzh/footer.png) no-repeat top center/cover;margin:auto;}
+.more{width:100px;text-align:center;color:white;position: absolute;bottom:10px;left:50%;margin-left:-50px;font-size: 20px;cursor: pointer;}
+.more:hover{text-decoration: underline;}
+.c_item{width:400px;height:300px;float:left;margin-left:20px;position:relative;margin-top:50px;}
+.c_item img{width:300px;float:right;}
+.c_item .text{text-align: left;position:absolute;left:0px;top:100px;}
+.c_item .text h3{font-size: 24px;line-height: 44px;color: #fff;margin-bottom: 10px;}
+.c_item .text span{display: block;width: 156px;height: 1px;background: url(/static/images/22/mrzh/item_line.png) no-repeat;background-size: 100%;margin-bottom: 15px;}
+.c_item .text p{font-size: 14px;line-height: 22px;color: #fff;}

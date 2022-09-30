@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" type="text/css" href="/static/css/quiz.css">
+{% endblock %}
+
+{% block main_content %}
+    <audio id="bg-music" src="/static/audio/bg.mp3" loop></audio>
+    <audio id="correct-music" src="/static/audio/correct.mp3"></audio>
+    <audio id="error-music" src="/static/audio/error.mp3"></audio>
+    <audio id="error2-music" src="/static/audio/error2.mp3"></audio>
+    <audio id="success-music" src="/static/audio/success.mp3"></audio>
+    <audio id="failure-music" src="/static/audio/failure.mp3"></audio>
+    <div class="wrapper">
+        <div class='score'>
+            <p>0</p>
+        </div>
+        <div class="holder"></div>
+        <div class="frame frame-quiz">
+            <div class="quiz-back"></div>
+            <!-- 正确错误弹出层 -->
+            <div class="answer"></div>
+            <!-- 通关成功失败弹出层 -->
+            <div class="pass-through"></div>
+            <!-- 防止错误点击的遮罩 -->
+            <div class="mask"></div>
+            <!-- 游戏结束的弹出层 -->
+            <div class="gameover">
+                <div class="quiz-score">
+                    <span class="score-coin"></span>
+                    <span class="score-x"></span>
+                    <span class="score-number">15</span>
+                </div>
+                <div class="back-index"></div>
+                <div class="quiz-replay"></div>
+            </div>
+            <div class="question">
+                <div class="title">
+                    <p>题目</p>
+                </div>
+                <div class="content" data-quesid="0">
+                    <p></p>
+                </div>
+            </div>
+            <div class="option">
+                <div class='oframe oframe-1' data-ans="A">
+                    <p></p>
+                </div>
+                <div class='oframe oframe-2' data-ans="B">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="frame frame-checkpoints">
+            <div class="checkpoint-back"></div>
+            <div class='checkpoint-frame'>
+                <div class='checkbtn pre'></div>
+                <div class='points'>
+                    <ul class="clearfix">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class='checkbtn next'></div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script type="text/javascript" src="/static/js/quiz.js"></script>
+{% endblock %}
