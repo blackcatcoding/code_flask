@@ -1,0 +1,5 @@
+*{margin:0;padding:0;box-sizing: border-box;}
+.container{width:1518px;height:962px;margin:auto;background: url(/static/images/test01.png) no-repeat top center/cover;position:relative;}
+.a-form{display:block;width:365px;height:260px;position: absolute;top:180px;left:200px;padding-left:30px;padding-top: 30px;}
+.a-form input{width: 318px;height: 40px;border: 1px solid #ddd;border-radius: 5px;position: relative;margin: 0 auto;margin-bottom: 20px;background: #fff;-moz-opacity: .95;opacity: .95;text-align: left;line-height: 20px;outline: none;color: #333;padding-left:20px;}
+.a-form input[type=submit]{margin-top:10px;line-height: 40px;font-size: 16px;color: #fff;background-color: #fd4c5b;border-radius: 5px;text-align: center;margin: 0 auto;cursor: pointer;}

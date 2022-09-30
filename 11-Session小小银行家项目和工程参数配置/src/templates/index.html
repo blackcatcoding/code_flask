@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>小小银行家</title>
+    <link rel="stylesheet" href="../static/css/25/cs1.css">
+</head>
+<body>
+<div class="msg">请输入存钱数量
+    <input type='text' id='data' name='money'>
+    <div class='button1'></div>
+    <p class="save"></p>
+    <div class="select">查询余额:</div>
+    <div class='button2'></div>
+
+    <p class="result"></p>
+
+</div>
+
+
+</body>
+<script src="/static/js/jquery/jquery.min.js"></script>
+<script type="text/javascript">
+    //获取class为button的元素
+    var button = $('.button1')[0];
+    //获取p元素
+    var p = $('.save');
+    //隐藏P元素
+    button.onclick = function () {
+        //获取input元素
+        var money = $('#data').val();
+        var data = {'money': money};
+        $.post('/save', data, function (result) {
+            p.html(result)
+        })
+    };
+
+    //获取查询按钮元素
+    var button2 = $('.button2')[0];
+    //获取展示余额元素
+    var select = $('.result');
+    //查询余额点击事件
+    button2.onclick = function () {
+        $.get('/query', function (result) {
+            select.html(result)
+        })
+    }
+
+</script>
+</html>

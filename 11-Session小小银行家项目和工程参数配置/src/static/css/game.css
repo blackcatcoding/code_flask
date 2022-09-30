@@ -1,0 +1,173 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    background: url(../images/game/background.png) no-repeat top center/cover;
+}
+
+body:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("../images/quiz/back.png") no-repeat -10000px -1000px,
+    url("../images/quiz/back-on.png") no-repeat -10000px -1000px;
+    width: 0;
+    height: 0
+}
+
+.game-container {
+    width: 1000px;
+    height: 600px;
+    margin: auto;
+    padding-top: 5%;
+}
+
+.game-header {
+    position: relative;
+}
+
+.game-title {
+    width: 435px;
+    height: 83px;
+    margin: auto;
+    background: url(../images/game/title.png) no-repeat center center/70% 70%;
+}
+
+.game-coins, .game-store {
+    width: 110px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    right: 200px;
+    background: url(../images/game/store.png) no-repeat center center/cover;
+}
+
+.game-coin-icon {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 5px 10px;
+    background: url(../images/game/coin.png) no-repeat center center;
+}
+
+.game-money, .game-store-enter {
+    font-size: 1.5rem;
+    color: #fff;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.game-store {
+    right: 70px;
+}
+
+.game-store-enter {
+    width: 110px;
+}
+
+.game-store-enter:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.game-frame {
+    height: 541px;
+    background: url(../images/game/border.png) no-repeat top center/cover;
+    padding: 10px 50px;
+}
+
+.game-list:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.game-content {
+    overflow: auto;
+    margin-top: 1rem;
+    width: 900px;
+    height: 500px;
+}
+
+.game-content::-webkit-scrollbar {
+    display: none;
+}
+
+.game-list-item {
+    width: 270px;
+    height: 190px;
+    background: url(../images/game/border2.png) no-repeat top center/cover;
+    float: left;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    position: relative;
+}
+
+.game-list-mask {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 250px;
+    height: 145px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+.game-enter {
+    display: block;
+    width: 120px;
+    height: 40px;
+    margin: auto;
+    margin-top: 50px;
+    background: url(../images/game/enter.png) no-repeat top center/cover;
+}
+
+.game-enter:hover {
+    cursor: pointer;
+}
+
+.game-cover {
+    width: 100%;
+    height: 85%;
+    float: left;
+    box-shadow: 0px 0px 4px #5515aa;
+    border-radius: 2px;
+}
+
+.game-name {
+    float: left;
+    width: 100%;
+    margin-top: .5rem;
+    color: #fff;
+    text-align: center;
+}
+
+.game-loading {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.game-loading span, .game-loading a {
+    color: white;
+}
+
+.am-icon-spinner {
+    display: none;
+}
+
+.game-back{
+    width:100px;
+    height:100px;
+    position:absolute;
+    top:30px;
+    left:40px;
+    background:url(../images/quiz/back.png) no-repeat center center/cover;
+}
+.game-back:hover{
+    cursor: pointer;
+    background:url(../images/quiz/back-on.png) no-repeat center center/cover;
+}
